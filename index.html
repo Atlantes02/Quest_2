@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>Formulário</title>
+    <style>
+        header{
+            background-color: rgb(46, 5, 71);
+            
+            width:100%; 
+            border-top: 14px double #f1ee09; /* Borda em cima */
+            border-bottom: 14px double #f1ee09; /* Borda a esquerda*/
+
+        }
+        h1{
+            font: 20px Arial, Helvetica, sans-serif; 
+            color: #ffffff;
+        }
+
+        body{
+            background-color: darkgreen;
+        }
+        Form{
+                background-color: #a3a3a2;
+                border:2px solid #000000;
+                position:relative;
+                left:38%;
+                top: 150px;;
+                width: 340px;
+            }
+        label{
+                font: 20px  georgia;
+                position:relative;
+                left:10%;
+        }
+        input { 
+                background-color: #B0E0E6; 
+                font: 12px verdana, arial, helvetica, sans-serif;
+                color:#325394;
+                border:2px solid #000000;
+                position:relative;
+                left:10%;
+           
+        }           
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ocorrências de violência doméstica no distrito federal</h1>
+    </header>
+    <body>
+        <Form action = "dados.php" method="POST">
+            <label>Local:</label> 
+            <input type ="text" name="local">
+            <input type="submit" value="Enviar Formulário"><br>
+        <Form>
+    </body>
+    
+</body>
+
+</html>
